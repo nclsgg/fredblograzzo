@@ -13,8 +13,8 @@ Atualmente, no dia 10 de Dezembro de 2019 o backend ainda não está finalizado.
 
 O frontend nesta aplicação terá duas partes. Uma em React.js, para o aplicativo na web. E em React Native, para o aplicativo mobile. Sua função será dar funcionamento gráfico ao backend e trazer todo o design do aplicativo.
 
-Funções concluidas: Login (Design e Funcionamento), Cadastro (Design).
-Funções a serem concluidas: Cadastro (Funcionamento), Artigos (Design, Criação, Edição, Classificação e Compartilhamento), Tela Principal (Design e Funcionamento), Tela de criação de Artigos (Design e Funcionamento), Tela de exibição de artigos (Design e Funcionamento).
+Funções concluidas: Login (Design e Funcionamento), Cadastro (Design e Funcionamento).
+Funções a serem concluidas: Artigos (Design, Criação, Edição, Classificação e Compartilhamento), Tela Principal (Design e Funcionamento), Tela de criação de Artigos (Design e Funcionamento), Tela de exibição de artigos (Design e Funcionamento).
 
 Atualmente, no dia 10 de Dezembro de 2019 o frontend ainda não está finalizado.
 
