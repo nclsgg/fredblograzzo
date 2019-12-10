@@ -1,6 +1,6 @@
 # Desafio Razzo (Blog do Fred)
 
-##Back-End
+## Back-End
 
 A função do backend nesta aplicação será de gerenciar as informações do usuário, tanto para login e cadastro quanto para criação e compartilhamento de Artigos.
 
@@ -9,7 +9,7 @@ Funções a serem concluidas: Organização por categorias e outras funções a 
 
 Atualmente, no dia 10 de Dezembro de 2019 o backend ainda não está finalizado.
 
-##Front-End
+## Front-End
 
 O frontend nesta aplicação terá duas partes. Uma em React.js, para o aplicativo na web. E em React Native, para o aplicativo mobile. Sua função será dar funcionamento gráfico ao backend e trazer todo o design do aplicativo.
 
@@ -19,6 +19,6 @@ Funções a serem concluidas: Cadastro (Funcionamento), Artigos (Design, Criaç�
 Atualmente, no dia 10 de Dezembro de 2019 o frontend ainda não está finalizado.
 
 
-##Data de Entrega
+## Data de Entrega
 
 A previsão de entrega para este projeto é para o dia 16 de Dezembro de 2019, caso não haja nenhum imprevisto. Se houver necessidade de mudança de data, entrarei em contato.
