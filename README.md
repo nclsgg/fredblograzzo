@@ -18,6 +18,14 @@ Funções a serem concluidas: Cadastro (Funcionamento), Artigos (Design, Criaç�
 
 Atualmente, no dia 10 de Dezembro de 2019 o frontend ainda não está finalizado.
 
+## Design
+
+### Tela para Login
+![Login](https://user-images.githubusercontent.com/48268521/70559878-364f4400-1b66-11ea-9a3c-7365d9b3bb85.png)
+
+### Tela para Cadastro
+![Cadastro](https://user-images.githubusercontent.com/48268521/70559877-364f4400-1b66-11ea-9153-7fe717631361.png)
+
 
 ## Data de Entrega
 
