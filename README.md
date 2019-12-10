@@ -22,10 +22,9 @@ Atualmente, no dia 10 de Dezembro de 2019 o frontend ainda não está finalizado
 
 ### Tela para Login
 ![Login2](https://user-images.githubusercontent.com/48268521/70559988-7ca4a300-1b66-11ea-8d49-8f4c9fd6c786.png)
-![Login](https://user-images.githubusercontent.com/48268521/70559878-364f4400-1b66-11ea-9a3c-7365d9b3bb85.png)
 
 ### Tela para Cadastro
-![Cadastro](https://user-images.githubusercontent.com/48268521/70559877-364f4400-1b66-11ea-9153-7fe717631361.png)
+![Cadastro2](https://user-images.githubusercontent.com/48268521/70560031-9c3bcb80-1b66-11ea-9cf1-8ff9d575270d.png)
 
 
 ## Data de Entrega
