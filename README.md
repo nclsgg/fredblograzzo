@@ -29,4 +29,4 @@ Atualmente, no dia 10 de Dezembro de 2019 o frontend ainda não está finalizado
 
 ## Data de Entrega
 
-A previsão de entrega deste projeto é para o dia 16 de Dezembro de 2019, caso não haja nenhum imprevisto. Se houver necessidade de mudança de data, entrarei em contato.
+A previsão de entrega deste projeto é de 8 dias a partir do dia 09 de Dezembro de 2019, caso não haja nenhum imprevisto. Se houver necessidade de mudança de data, entrarei em contato.
