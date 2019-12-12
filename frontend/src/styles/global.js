@@ -4,7 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
-
+  @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700|Montserrat:400,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700|Arimo:400,700&display=swap');
   * {
     margin: 0;
     padding: 0;

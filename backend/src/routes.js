@@ -11,6 +11,7 @@ import MeetupController from './app/controllers/MeetupController';
 import SubscriptionController from './app/controllers/SubscriptionController';
 import FileController from './app/controllers/FileController';
 import OrganizingController from './app/controllers/OrganizingController';
+import CategoryController from './app/controllers/CategoryController';
 
 const routes = new Router();
 const upload = multer(multerConfig);
@@ -27,6 +28,7 @@ routes.put('/meetups/:id', MeetupController.update);
 routes.delete('/meetups/:id', MeetupController.delete);
 
 routes.get('/organizing', OrganizingController.index);
+routes.get('/meetups/:category', CategoryController.index);
 
 routes.post('/meetups/:meetupId/subscriptions', SubscriptionController.store);
 routes.get('/meetups/subscriptions', SubscriptionController.index);
