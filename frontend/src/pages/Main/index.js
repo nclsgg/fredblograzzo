@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { parseISO, format } from 'date-fns';
+import pt from 'date-fns/locale/pt';
 import { MdControlPointDuplicate } from 'react-icons/md';
 import { FaFolder, FaEdit, FaTrashAlt } from 'react-icons/fa';
 import { FiLogOut } from 'react-icons/fi';
@@ -25,7 +27,25 @@ import {
 
 export default function Main() {
   const dispatch = useDispatch();
-  const profile = useSelector(state => state.user.profile);
+
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    async function loadArticles() {
+      const response = await api.get('/meetups');
+
+      const data = response.data.map(a => ({
+        ...a,
+        formatedDate: format(parseISO(a.createdAt), 'dd/mm/yyyy', {
+          locale: pt,
+        }),
+      }));
+
+      setArticles(data);
+    }
+
+    loadArticles();
+  }, []);
 
   function handleSignOut() {
     dispatch(signOut());
@@ -55,7 +75,7 @@ export default function Main() {
           </Categories>
           <Profile>
             <div>
-              <strong>{profile.name}</strong>
+              <strong>a</strong>
               <p>Usuário premium</p>
             </div>
             <button type="button" onClick={handleSignOut}>
@@ -82,11 +102,13 @@ export default function Main() {
           </Buttons>
         </Options>
         <ul>
-          <Article>
-            <p className="profile">Nicolas Guadagno</p>
-            <strong>O que é identidade social?</strong>
-            <p className="date">12/12/2019</p>
-          </Article>
+          {articles.map(a => (
+            <Article key={a.id}>
+              <p className="profile">{a.User.name}</p>
+              <strong>{a.title}</strong>
+              <p className="date">{a.formatedDate}</p>
+            </Article>
+          ))}
         </ul>
       </DivMiddle>
       <DivRight />
