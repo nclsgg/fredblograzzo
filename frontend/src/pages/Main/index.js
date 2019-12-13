@@ -27,6 +27,7 @@ import {
 
 export default function Main() {
   const dispatch = useDispatch();
+  const profile = useSelector(state => state.user.profile);
 
   const [articles, setArticles] = useState([]);
 
@@ -67,15 +68,15 @@ export default function Main() {
           </Archives>
           <Categories>
             <p>CATEGORIAS</p>
-            <Link to="/main">Sem categoria</Link>
-            <Link to="/main">Desenvolvimento Mobile</Link>
-            <Link to="/main">TI</Link>
-            <Link to="/main">Design</Link>
-            <Link to="/main">Desenvolvimento Web</Link>
+            {articles.map(a => (
+              <Link key="a.category" to="/main">
+                {a.category}
+              </Link>
+            ))}
           </Categories>
           <Profile>
             <div>
-              <strong>a</strong>
+              <strong>{profile.name}</strong>
               <p>Usuário premium</p>
             </div>
             <button type="button" onClick={handleSignOut}>

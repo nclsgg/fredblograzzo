@@ -63,6 +63,10 @@ export const Archives = styled.div`
     color: #000;
     margin-right: 65%;
     margin-bottom: 13px;
+
+    &:hover {
+      color: #4f4f4f;
+    }
   }
 `;
 
@@ -88,6 +92,10 @@ export const Categories = styled.div`
     color: #000;
     margin-right: 65%;
     margin-bottom: 13px;
+
+    &:hover {
+      color: #4f4f4f;
+    }
   }
 `;
 
@@ -113,13 +121,12 @@ export const Options = styled.div`
   border-top: 1px solid #dadada;
   margin-top: 30px;
   margin-bottom: 15px;
-  align-items: center;
-  justify-content: center;
 
   p {
     margin-top: 20px;
     color: #bcbdcf;
-    margin-right: 150px;
+    margin-right: 450px;
+    margin-left: 20px;
   }
 `;
 
@@ -138,6 +145,11 @@ export const Buttons = styled.div`
 
 export const Article = styled.li`
   border-bottom: 1px solid #dadada;
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 23px -5px rgba(152, 84, 255, 1);
+  }
 
   strong {
     margin-left: 20px;
