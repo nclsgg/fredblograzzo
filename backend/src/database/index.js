@@ -5,10 +5,10 @@ import databaseConfig from '../config/database';
 
 import User from '../app/models/User';
 import File from '../app/models/File';
-import Meetup from '../app/models/Meetup';
+import Article from '../app/models/Article';
 import Subscription from '../app/models/Subscription';
 
-const models = [User, File, Meetup, Subscription];
+const models = [User, File, Article, Subscription];
 
 class Database {
   constructor() {

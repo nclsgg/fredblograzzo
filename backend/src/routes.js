@@ -7,10 +7,9 @@ import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
 
 import authMiddleware from './app/middlewares/auth';
-import MeetupController from './app/controllers/MeetupController';
+import ArticleController from './app/controllers/ArticleController';
 import SubscriptionController from './app/controllers/SubscriptionController';
 import FileController from './app/controllers/FileController';
-import OrganizingController from './app/controllers/OrganizingController';
 import CategoryController from './app/controllers/CategoryController';
 
 const routes = new Router();
@@ -22,16 +21,15 @@ routes.post('/sessions', SessionController.store);
 routes.use(authMiddleware);
 routes.put('/users', UserController.update);
 
-routes.post('/meetups', MeetupController.store);
-routes.get('/meetups', MeetupController.index);
-routes.put('/meetups/:id', MeetupController.update);
-routes.delete('/meetups/:id', MeetupController.delete);
+routes.post('/articles', ArticleController.store);
+routes.get('/articles', ArticleController.index);
+routes.put('/articles/:id', ArticleController.update);
+routes.delete('/articles/:id', ArticleController.delete);
 
-routes.get('/organizing', OrganizingController.index);
-routes.get('/meetups/:category', CategoryController.index);
+routes.get('/articles/:category', CategoryController.index);
 
-routes.post('/meetups/:meetupId/subscriptions', SubscriptionController.store);
-routes.get('/meetups/subscriptions', SubscriptionController.index);
+routes.post('/articles/:articleId/subscriptions', SubscriptionController.store);
+routes.get('/articles/subscriptions', SubscriptionController.index);
 
 routes.post('/files', upload.single('file'), FileController.store);
 

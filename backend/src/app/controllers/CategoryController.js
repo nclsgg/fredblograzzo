@@ -1,8 +1,8 @@
-import Meetup from '../models/Meetup';
+import Article from '../models/Article';
 
 class CategoryController {
   async index(req, res) {
-    const categoryArticle = await Meetup.findAll({
+    const categoryArticle = await Article.findAll({
       where: { category: req.params.category },
     });
 

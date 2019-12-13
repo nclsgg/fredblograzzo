@@ -1,21 +1,21 @@
 import * as Yup from 'yup';
 
-import Meetup from '../models/Meetup';
+import Article from '../models/Article';
 import User from '../models/User';
 
-class MeetupController {
+class ArticleController {
   async index(req, res) {
     const where = {};
     const { page = 1 } = req.query;
 
-    const meetups = await Meetup.findAll({
+    const articles = await Article.findAll({
       where,
       include: [User],
       limit: 10,
       offset: 10 * page - 10,
     });
 
-    return res.json(meetups);
+    return res.json(articles);
   }
 
   async store(req, res) {
@@ -32,12 +32,12 @@ class MeetupController {
 
     const user_id = req.userId;
 
-    const meetup = await Meetup.create({
+    const article = await Article.create({
       user_id,
       ...req.body,
     });
 
-    return res.json(meetup);
+    return res.json(article);
   }
 
   async update(req, res) {
@@ -54,30 +54,30 @@ class MeetupController {
 
     const user_id = req.userId;
 
-    const meetup = await Meetup.findByPk(req.params.id);
+    const article = await Article.findByPk(req.params.id);
 
-    if (meetup.user_id !== user_id) {
+    if (article.user_id !== user_id) {
       return res.status(400).json({ error: 'Not authorized' });
     }
 
-    await meetup.update(req.body);
+    await article.update(req.body);
 
-    return res.json(meetup);
+    return res.json(article);
   }
 
   async delete(req, res) {
     const user_id = req.userId;
 
-    const meetup = await Meetup.findByPk(req.params.id);
+    const article = await Article.findByPk(req.params.id);
 
-    if (meetup.user_id !== user_id) {
+    if (article.user_id !== user_id) {
       return res.status(400).json({ error: 'Not Authorized' });
     }
 
-    await meetup.destroy();
+    await article.destroy();
 
     return res.json({ success: 'Deleted' });
   }
 }
 
-export default new MeetupController();
+export default new ArticleController();

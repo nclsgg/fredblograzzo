@@ -33,7 +33,7 @@ export default function Main() {
 
   useEffect(() => {
     async function loadArticles() {
-      const response = await api.get('/meetups');
+      const response = await api.get('/articles');
 
       const data = response.data.map(a => ({
         ...a,
