@@ -4,10 +4,10 @@
 
 A função do backend nesta aplicação será de gerenciar as informações do usuário, tanto para login e cadastro quanto para criação e compartilhamento de Artigos.
 
-Funções concluidas: Login, Cadastro, Criação de Artigos, Edição de Artigos e Apagamento de Arquivos.
-Funções a serem concluidas: Organização por categorias e outras funções a se pensar ao longo do desenvolvimento.
+Funções concluidas: Login, Cadastro, Criação de Artigos, Edição de Artigos e Apagamento de Arquivos, Separação de artigos por categorias.
+Funções a serem concluidas: Dependendo do desenvolvimento do frontend.
 
-Atualmente, no dia 10 de Dezembro de 2019 o backend ainda não está finalizado.
+Atualmente, no dia 10 de Dezembro de 2019 o backend está momentaneamente finalizado.
 
 ## Front-End
 
