@@ -11,6 +11,7 @@ import api from '~/services/api';
 import { signOut } from '~/store/modules/auth/actions';
 
 import logo from '~/assets/logo.png';
+import profilepic from '~/assets/profile.png';
 
 import {
   Content,
@@ -68,6 +69,7 @@ export default function Main() {
           </Archives>
           <Categories>
             <p>CATEGORIAS</p>
+            <Link to="/main">Sem Categoria</Link>
             {articles.map(a => (
               <Link key="a.category" to="/main">
                 {a.category}
@@ -75,6 +77,7 @@ export default function Main() {
             ))}
           </Categories>
           <Profile>
+            <img src={profilepic} alt="profile" />
             <div>
               <strong>{profile.name}</strong>
               <p>Usuário premium</p>

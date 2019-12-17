@@ -13,7 +13,7 @@ export const Content = styled.div`
 export const DivLeft = styled.div`
   background: #fff;
   width: 250px;
-  height: 100%;
+  max-width: 250px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -74,9 +74,12 @@ export const Categories = styled.div`
   align-items: left;
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   margin-top: 20px;
   margin-left: 10%;
   width: 100%;
+  height: 500px;
+  max-height: 500px;
   border-bottom: 1px solid #dadada;
 
   p {
@@ -99,7 +102,40 @@ export const Categories = styled.div`
   }
 `;
 
-export const Profile = styled.div``;
+export const Profile = styled.div`
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+
+  div {
+    margin-top: 7px;
+    text-align: left;
+
+    strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    p {
+      display: block;
+      font-size: 11px;
+    }
+  }
+
+  button {
+    width: 30px;
+    height: 20px;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  img {
+    max-width: 48px;
+    max-height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+`;
 
 // TELA PRINCIPAL ( LISTAGEM DE ARTIGOS )
 
